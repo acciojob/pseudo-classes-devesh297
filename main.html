@@ -3,11 +3,59 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+	<style>
+		:root {
+            background-color: rgb(135, 206, 235);
+        }
+		article p:first-child{
+          color: white;
+		  background-color: black;}
+		article p:nth-child{
+            color: inherit;}
+		article p:last-child{
+			color:red;
+		}
+
+         ul {
+            list-style-type: none;
+            padding: 0;
+        }
+		ul li {
+            width: 50%;
+            padding: 10px;
+            background-color: gray;
+        }
+		ul li:nth-child(odd) {
+            background-color: white;
+        }
+        ul li:first-child, 
+        ul li:last-child {
+            font-size: 22px;
+        }
+
+        ul li:nth-last-child(3) {
+            background-color: pink;
+        }
+
+       
+	</style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+	
+	 <article>
+        <p>This is the first paragraph.</p>
+        <p>This is the second paragraph.</p>
+        <p>This is the third paragraph.</p>
+    </article>
+
+	<ul>
+		<li>First item</li>
+		<li>Second item</li>
+		<li>Third item</li>
+		<li>Fourth item</li>
+		<li>Fifth item</li>
+	</ul>
     <script type="text/javascript" src="./script.js">
 </script>
 
